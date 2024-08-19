@@ -27,7 +27,7 @@ export function Login() {
       .then(() => {
         mostrarToast();
         resetInputs();
-        navigate("/admin", { replace: true });
+        navigate("/", { replace: true });
       })
       .catch((erro) => {
         alert(erro.code);
